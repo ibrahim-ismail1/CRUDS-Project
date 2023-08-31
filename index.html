@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index-stayle.css">
+    <title>CRUDS Project</title>
+</head>
+<body>
+
+    <div class="container py-4">
+        <label for="Pname" >Product Name</label>
+        <input type="text"  id="Pname" class=" form-control mb-3">
+
+        <label for="Pprice">Product Price</label>
+        <input type="number"  id="Pprice" class=" form-control mb-3">
+
+        <label for="Pcategory">Product Category</label>
+        <input type="text"  id="Pcategory" class=" form-control mb-3">
+
+        <label for="Pdesc">Product Description</label>
+        <textarea type="text"  id="Pdesc" class=" form-control mb-3"></textarea>
+
+        <button class="mb-3 btn btn-outline-info" onclick="AddProduct()" id="btn1">Add Product</button>
+
+        <input type="text" id="" placeholder="Search By Name.." oninput="search1(this.value);" class="form-control w-75 mb-3 mx-auto">
+    </div>
+    
+    <div class="container py-4">
+
+        <table class="w-75 mx-auto mt-4 table">
+            <thead>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Category</th>
+                <th>Product Description</th>
+                <th>Delete</th>
+                <th>UpDate</th>
+            </thead>
+            <tbody id="tablebody">
+             
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index1-action.js"></script>
+</body>
+</html>
